@@ -5,27 +5,27 @@
 # Site settings
 
 # title of site appears in banner
-title: Collection Builder
+title: Research Lab
 # tagline appears in banner
-tagline: a theme for building simple digital exhibits
+tagline: a theme for documenting and disseminating the work of research teams at the University of Idaho
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
+description: "Research Lab Template is a template for creating sites documenting the work of research labs at the University of Idaho"
 # keywords appear in meta tags
-keywords: "university of idaho, digital collections, digital humanities"
+keywords: "university of idaho, research, labs"
 # creator of the digital collection, to appear in meta tags
-author: evanwill
+author: owikle
 # creator contact email for meta tags
-email: ewilliamson@uidaho.edu
+email: omwikle@uidaho.edu
 # collection project date, when did you publish this
 collection-date: "2018"
 
 # url is your gh-pages base, following the pattern: username.github.io
-url: https://collectionbuilder.github.io
+url: https://uidaholib.github.io
 # baseurl is your github repository's name prefixed with a /
-baseurl: /collectionbuilder-gh
+baseurl: /researchlab-template
 # repository is the github repository's full url
-repository: https://github.com/CollectionBuilder/collectionbuilder-gh
+repository: https://github.com/uidaholib/researchlab-template
 
 # Theme Options
 # navbar text color
