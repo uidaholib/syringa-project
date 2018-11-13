@@ -6,7 +6,8 @@ permalink: /people/
 {% assign people = site.data.people %}
 
 {% for person in people  %}
-<div class="row">
+{% if person.title contains 'Former' %}
+<div class="row" style="background:blue;">
     
         <div class="col-md-4">
             <h2>{{person.name}}</h2>
@@ -17,4 +18,17 @@ permalink: /people/
             </div>
         
     </div>
-    {%endfor%}
+    {% else %}
+    <div class="row" style="background:red;">
+    
+            <div class="col-md-4">
+                <h2>{{person.name}}</h2>
+                <h4>{{person.title}}</h4>
+            </div>
+            <div class="col-md-8">
+                <p> {{person.biography}}</p>
+                </div>
+            
+        </div>
+        {% endif %}
+    {% endfor %}
