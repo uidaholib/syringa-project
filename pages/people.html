@@ -6,22 +6,22 @@ permalink: /people/
 {% assign people = site.data.people %}
 
 {% for person in people  %}
-{% if person.title contains 'Former' %}
-<div class="row" style="background:blue;">
-    
+
+<div class="row">
         <div class="col-md-4">
+            <img class="img-fluid" src="{{ 'objects/leontina-hormel.jpg' | relative_url }}">
+        </div>
+    
+        <div class="col-md-8">
             <h2>{{person.name}}</h2>
             <h4>{{person.title}}</h4>
-        </div>
-        <div class="col-md-8">
-            <p> {{person.biography}}</p>
-            </div>
+            <p>{{person.biography}}</p>
         
     </div>
     {% else %}
-    <div class="row" style="background:red;">
+    <div class="row">
     
-            <div class="col-md-4">
+            <div class="col-md-8">
                 <h2>{{person.name}}</h2>
                 <h4>{{person.title}}</h4>
             </div>
@@ -30,5 +30,4 @@ permalink: /people/
                 </div>
             
         </div>
-        {% endif %}
     {% endfor %}

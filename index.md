@@ -5,3 +5,4 @@ title: Home
 banner-image: "objects/test001.jpg"
 ---
 
+{% include index/description.html %}
