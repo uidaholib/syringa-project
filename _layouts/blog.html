@@ -13,7 +13,7 @@ layout: page
             </div>
             <ul class="list-group list-group-flush">
                 {% for post in posts %}
-                <li class="list-group-item"><a href="{{ '/blog/post.html' | absolute_url | append: '?id=' | append: post.indexid }}">{{ post.title }}</a></li>
+                <li class="list-group-item"><a href="{{ '/blog/' | absolute_url | append: '#' | append: post.link }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
