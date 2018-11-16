@@ -27,3 +27,5 @@ Learn about:
 - Galleries using [lightGallery](http://sachinchoolur.github.io/lightGallery/)
 - Simple [lunr](https://lunrjs.com/) search 
 - Rich markup using [Schema.org](http://schema.org) and [Open Graph protocol](http://ogp.me/) standards.
+
+This is a new line
