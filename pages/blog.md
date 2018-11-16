@@ -1,0 +1,20 @@
+---
+title: Blog
+layout: blog
+permalink: /blog/
+featured-image: "objects/test001.jpg"
+---
+
+# This is a pretend title for a blog post
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue condimentum ex in placerat. Fusce dignissim, mauris ut congue suscipit, lectus tortor laoreet orci, in fringilla justo arcu sed turpis. Sed turpis massa, vehicula et aliquam a, consectetur nec risus. Sed euismod, nulla vitae facilisis euismod, mauris est iaculis nulla, at tincidunt lacus justo at justo. Cras vitae urna lacus. Etiam placerat, tortor non scelerisque convallis, neque enim rhoncus mauris, at dignissim arcu felis ac massa. Donec vitae diam felis. Proin consequat porttitor urna id semper. Vivamus turpis tellus, ornare ac fringilla vel, porttitor in justo. Nullam quis lorem eu eros facilisis imperdiet a vitae libero. Maecenas quam massa, ornare non hendrerit malesuada, consequat ac odio. Mauris dui ante, congue quis justo at, mollis egestas justo. Cras ornare, ligula rutrum congue molestie, est quam facilisis sem, ut lacinia quam risus sed eros. Nam vel quam ipsum. Proin id ultrices enim. Nam et tempus mi.
+
+Etiam ut maximus erat, vel ornare lacus. Fusce laoreet velit ut eros maximus pharetra. Maecenas fermentum lacus risus, non elementum dolor consectetur non. Maecenas et interdum libero, viverra ultricies justo. Aliquam erat volutpat. Nam eu arcu vitae ipsum aliquet tincidunt. Proin lobortis urna consequat molestie ultricies. Sed id arcu vel mi maximus laoreet laoreet ut erat. Mauris ullamcorper, nisi a blandit pulvinar, lacus ante luctus ante, sit amet molestie lectus massa sit amet nibh. Nulla et aliquet ante, et fermentum nulla. Cras tempus vestibulum enim, a sollicitudin urna facilisis a. Cras odio tortor, vulputate ac elementum eget, maximus id ex. Nunc mi lectus, consequat ac nisl sit amet, interdum cursus justo. Fusce vitae venenatis tortor. Donec eu condimentum dolor, id venenatis lectus. Nam erat justo, finibus sit amet pretium a, ultrices eu diam.
+
+Nam sed lorem consectetur, ornare mauris eget, maximus metus. Curabitur vitae nisi tincidunt, fermentum ligula eget, consectetur tortor. Aliquam id sollicitudin est. Nullam mi purus, malesuada eget risus a, tempor elementum libero. Fusce ac dolor mollis, feugiat sem at, sodales enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat varius velit, vitae elementum nibh luctus sed.
+
+# Pretend title 2
+
+Nulla felis velit, pretium quis odio eu, consequat varius risus. Nunc eu eros fringilla, blandit neque sed, iaculis metus. Aliquam commodo ut eros maximus venenatis. Suspendisse quam orci, accumsan in ullamcorper eget, facilisis in velit. Phasellus nec nisl vitae lorem pretium porta. Vestibulum feugiat nec arcu id porta. Phasellus ac eros lorem. Vestibulum maximus turpis a nisl viverra, scelerisque interdum massa interdum.
+
+Nunc vel molestie nibh. Phasellus a enim at purus convallis aliquet sed et metus. Aliquam lobortis sapien non urna lacinia, a volutpat tortor laoreet. Aliquam rhoncus, nibh a mollis porttitor, justo nulla ullamcorper purus, eu rhoncus sem quam eu sem. Morbi vel felis ultricies, dapibus leo et, condimentum sapien. Donec massa turpis, tincidunt nec congue et, ullamcorper sit amet lectus. Vivamus scelerisque velit id mi tristique facilisis. Suspendisse a hendrerit neque, volutpat tincidunt tellus. Curabitur vel risus a ligula malesuada molestie at quis turpis. Aliquam elit augue, lobortis at lectus vel, rutrum rhoncus erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum quis fringilla metus. Mauris venenatis dignissim sollicitudin. Vestibulum cursus lorem at nibh suscipit, vel posuere odio elementum. Donec non sapien auctor purus lobortis egestas.
