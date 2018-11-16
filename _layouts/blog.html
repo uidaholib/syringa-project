@@ -3,7 +3,7 @@ layout: page
 ---
 {% include index/jumbotron.html %} 
 
-{% assign posts = site.data.blog %}
+
 
 <div class="row">
     <div class="col-md-3">
@@ -12,8 +12,8 @@ layout: page
                 <h4></h4>
             </div>
             <ul class="list-group list-group-flush">
-                {% for post in posts %}
-                <li class="list-group-item"><a href="{{ '/blog/' | absolute_url | append: '#' | append: post.link }}">{{ post.title }}</a></li>
+                {% for p in site.posts %} 
+                <li class="list-group-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -25,7 +25,10 @@ layout: page
         </div>
     </div>
     <div class="col-md-9">
-        {{ content }}
+        {% for p in site.posts %} 
+                <h2 class="list-group-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+                <p>{{ p.content }}</p>
+                {% endfor %}
     </div>
 </div>
 
