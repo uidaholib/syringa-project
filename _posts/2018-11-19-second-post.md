@@ -1,7 +1,7 @@
 ---
 title: Second Post
 layout: post
-tags: [keyword1, keyword2, keyword3]
+tags: [keyword1, keyword2]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar mattis nunc sed blandit libero volutpat sed. Enim facilisis gravida neque convallis a cras. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Cursus risus at ultrices mi tempus. Mauris nunc congue nisi vitae. Eget est lorem ipsum dolor sit amet. Viverra aliquet eget sit amet tellus cras adipiscing. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Convallis convallis tellus id interdum velit laoreet. Sagittis vitae et leo duis ut. Nibh ipsum consequat nisl vel pretium lectus quam id. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
