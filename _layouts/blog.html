@@ -31,7 +31,10 @@ layout: page
                     <div class="card-title">
                         <h2 class="list-group-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
                     </div>
-                    <p>{{ p. excerpt }}</p> 
+                    <p>{{ p.excerpt }}</p>
+                    {% for tag in p.tags %}
+                    <button type="button" class="btn btn-secondary">{{ tag }}</button>
+                    {% endfor %} 
                 </div>
             </div>
         {% endfor %}
