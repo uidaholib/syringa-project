@@ -1,15 +1,12 @@
 ---
 layout: page
 ---
-{% include index/jumbotron.html %} 
-
-
 
 <div class="row">
     <div class="col-md-3">
         <div class="card">
             <div class="card-header">
-                <h4></h4>
+                <h4>New Posts</h4>
             </div>
             <ul class="list-group list-group-flush">
                 {% for p in site.posts %} 
@@ -33,8 +30,9 @@ layout: page
                     </div>
                     <p>{{ p.excerpt }}</p>
                     {% for tag in p.tags %}
-                    <button type="button" class="btn btn-secondary">{{ tag }}</button>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ tag | trim |escape }}" href="{{ tag | trim | url_param_escape | prepend: '/blog/#' | relative_url }}">{{ tag }}</a> 
                     {% endfor %} 
+                    
                 </div>
             </div>
         {% endfor %}

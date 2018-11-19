@@ -3,8 +3,8 @@
     <h5 class="card-header">News</h5>
     <div class="card-body">
         {% for n in news %}
-        <div class="card-title"><a href="{{ n.hyperlink }}">{{ n.title }}</a></div>
-        <img src="{{ n.image | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" class="img-fluid">
+        <div class="card-title pt-4"><a href="{{ n.hyperlink }}">{{ n.title }}</a></div>
+        <img src="{{ n.image | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" class="img-thumbnail">
         {% endfor %}
     </div>
 </div>
