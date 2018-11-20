@@ -7,21 +7,15 @@
     background-position: center;
 }
 </style>
-<div class="jumbotron text-white pb-0 mb-0 rounded-0" id="home-banner">
-    <div class="jumbo-text p-4 container">
-        <h1 class="display-4">{{ site.title }}</h1>
-        <p>{{ site.tagline }}</p>
+<div class="jumbotron text-dark pb-6 mb-6 rounded-0" id="home-banner">
+    <div class="jumbo-text p-4 container text-center">
+        <div class="col-md-8 mx-auto display-block">
+            <div class="card">
+                <h1 class="display-4">{{ site.title }}</h1>
+                <p>{{ site.tagline }}</p>
+            </div>
+        </div>  
     </div>
 </div>
-{%- else -%}
-<div class="container">
-    <div class="row mt-2">
-        <div class="col-md-12">
-            <h1 class="h3">
-                <a href="{{ '/' | absolute_url }}" >{{ site.title }}</a>
-                <small class="text-muted">| {{ site.tagline }}</small>
-            </h1>
-        </div>
-    </div>	
-</div>
+
 {%- endif -%}
