@@ -1,0 +1,11 @@
+<div class="card mb-6">
+    {% assign news = site.data.news %}
+    <h5 class="card-header">News</h5>
+    <div class="card-body">
+        {% for n in news %}
+        <div class="card-title"><a href="{{ n.hyperlink }}" class="text-dark">{{ n.title }}</a></div>
+        <img src="{{ n.image | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" class="img-thumbnail mb-4">
+        {% endfor %}
+    </div>
+</div>
+    

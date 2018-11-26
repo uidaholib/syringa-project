@@ -1,2 +1,3 @@
-title,date_published,author,blogpost_preview,post_hyperlink,post_keywords,latestposts_hyperlink
-This is a pretend title for a blog post,11/14/2018,Denessy Rodriguez ,This is my first blog post and I am writing about topics concerning this research and what not blah blah blah blah. This is what it is all about.,pretendlink,,
+link,title,date_published,author,blogpost_preview,post_keywords,status
+pretend-title-1,Pretend title 1,11/14/2018,Denessy Rodriguez ,This is my first blog post and I am writing about topics concerning this research and what not blah blah blah blah. This is what it is all about.,keyword1;keyword2;keyword3,new,
+pretend-title-2,Pretend title 2,11/14/2018,D. Rodriguez ,This is my second blog post and I am writing about topics concerning this research and what not blah blah blah blah. This is what it is all about.,keyword1;keyword2;keyword3,old,

@@ -5,14 +5,26 @@
         </button>
 
         <div class="collapse navbar-collapse" id="page-nav">
+            {% if page.layout != "home-infographic" %}
             <ul class="navbar-nav mr-auto">
+                <div class="container">
+                        <div class="row mt-2">
+                        <h1 class="h3">
+                            <a href="{{ '/' | absolute_url }}" class="text-dark" >{{ site.title }}</a>
+                            <!--<small class="text-muted">| {{ site.tagline }}</small>-->
+                        </h1>
+                    </div>
+                </div>  
+            </ul>
+            {% endif %}
+            <ul class="navbar-nav ml-auto">
                 {% for nav in site.data.nav-config %}
                 <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
                     <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
                 </li>
                 {% endfor %}
             </ul>
-            <script>
+            <!--<script>
                 function site_search() {
                     var query = document.getElementById("site-search").value
                     window.open("{{ '/search/index.html' | absolute_url }}?q=" + encodeURIComponent(query), "_self" );
@@ -28,7 +40,7 @@
                         </button>
                     </div>
                 </div>
-            </form>
+            </form>-->
         </div>
     </div>
 </nav>
