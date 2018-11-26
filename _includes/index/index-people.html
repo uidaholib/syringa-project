@@ -7,14 +7,15 @@
         People
     </h5>
     <div class="card-body">
-        {% for person in people  %}
-        {% for p in person[1] %}
-        <div class="card-title">
-            {{ p.name }}
-        </div>
-        <p>{{ p.biography }}</p>
+        {% for person in people %}
+        {% if person.title == "Principal Investigator" %}
+        <h5 class="card-title">
+            {{ person.title }}
+        </h5>
+        <p><b>{{ person.name }}</b></p>
+        <p>{{ person.biography }}</p>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
-{% endfor %}
-{% endfor %}
 </div>
