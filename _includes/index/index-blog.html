@@ -3,10 +3,10 @@
         <h5 class="card-header">
             New Posts
         </h5>
-        <div class="card-body text-center">
+        <div class="card-body">
         <ul class="list-group list-group-flush">
             {% for p in site.posts %} 
-            <li class="list-group-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+            <li class="list-group-item"><a href="{{ p.url | relative_url }}" class="text-dark">{{ p.title }}</a></li>
             {% endfor %}
         </ul>
         </div>
