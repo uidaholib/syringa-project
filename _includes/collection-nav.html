@@ -19,10 +19,23 @@
             {% endif %}
             <ul class="navbar-nav ml-auto">
                 {% for nav in site.data.nav-config %}
+                {% if nav.display-text != "Resources" %}
                 <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
                     <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
                 </li>
-                {% endfor %}
+                {% endif %}
+                {% if nav.display-text == "Resources" %}
+                    <div class="dropdown">
+                        <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
+                            <a href="{{ nav.stub | relative_url }}" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ nav.display-text }}</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="{{ resources/#news | relative_url }}">News</a>
+                                <a class="dropdown-item" href="{{ resources/#publication | relative_url }}">Publications</a>
+                            </div>
+                        </li>
+                    </div>    
+                    {% endif %}
+                    {% endfor %}
             </ul>
             <!--<script>
                 function site_search() {
