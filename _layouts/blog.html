@@ -28,6 +28,8 @@ layout: page
                     <div class="card-title">
                         <h2 class="list-group-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
                     </div>
+                    <p><b>{{ p.date | date_to_long_string }}</b></p>
+                    <p><b>By: {{ p.author }}</b></p>
                     <p>{{ p.excerpt }}</p>
                     {% for tag in p.tags %}
                     <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ tag | trim |escape }}" href="{{ tag | trim | url_param_escape | prepend: '/blog/#' | relative_url }}">{{ tag }}</a> 

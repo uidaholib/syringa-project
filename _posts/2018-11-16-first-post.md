@@ -2,6 +2,8 @@
 title: First Post
 layout: post
 tags: [keyword1, keyword3]
+date: 2018-11-16
+author: Joe Vandal
 ---
 
 Amet luctus venenatis lectus magna. Sit amet nisl suscipit adipiscing. In nibh mauris cursus mattis molestie a. Aliquam vestibulum morbi blandit cursus. Odio euismod lacinia at quis risus sed. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Leo duis ut diam quam nulla porttitor massa. Eget nunc scelerisque viverra mauris in aliquam sem. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Dolor sed viverra ipsum nunc aliquet bibendum. Quis lectus nulla at volutpat diam ut. Elementum tempus egestas sed sed. Aliquam etiam erat velit scelerisque. Sit amet purus gravida quis blandit turpis cursus in.
