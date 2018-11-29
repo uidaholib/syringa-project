@@ -30,7 +30,7 @@ layout: page
 <div class="card-deck">
         <div class="card text-center border-dark my-3">
             {% if r.photo %}
-            <img class="card-img-top" src="{{ r.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" alt="Card image cap">
+            <img class="card-img-top w-75 rounded mx-auto d-block pt-4" src="{{ r.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" alt="Card image cap">
             {% endif %}
             <div class="card-body">
             <h5 class="card-title"><a href="{{ r.link }}" class="text-dark" target="_blank">{{ r.title }}</a></h5>
