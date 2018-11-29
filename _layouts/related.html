@@ -1,3 +1,45 @@
 ---
 layout: page
 ---
+
+<style>
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        flex-grow: 1;
+    }
+</style>
+
+{% assign related = site.data.resources %}
+
+<h1>Related Resources</h1>
+
+<div class="row py-4">
+        {% for r in related %}
+        {% if r.category == "related" %}
+    <div class="col-md-6">
+<div class="card-deck">
+        <div class="card text-center border-dark my-3">
+            {% if r.photo %}
+            <img class="card-img-top" src="{{ r.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" alt="Card image cap">
+            {% endif %}
+            <div class="card-body">
+            <h5 class="card-title"><a href="{{ r.link }}" class="text-dark" target="_blank">{{ r.title }}</a></h5>
+            <p class="card-text">{{ r.preview }}</p>
+            <a href="{{ r.link }}" class="btn btn-secondary" target="_blank">Read More</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
