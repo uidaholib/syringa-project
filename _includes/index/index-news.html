@@ -1,0 +1,16 @@
+<div class="card mb-6">
+    {% assign news = site.data.resources %}
+    
+    <h5 class="card-header">News</h5>
+    <div class="card-body">
+        {% for n in news %}
+        {% if n.category == "news" %}
+        <div class="card-title"><a href="{{ n.link }}" class="text-dark" target="_blank">{{ n.title }}</a></div>
+        {% if n.photo %}
+        <img src="{{ n.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" class="img-thumbnail mb-4">
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+    
