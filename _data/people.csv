@@ -1,10 +1,10 @@
-name,title,biography,photo,index
-Dr. Leontina Hormel,Principal Investigator,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",leontina-hormel,y
-Denessy Rodriguez,Former Lab Assistant,"Denessy Rodriguez is a former lab assistant and undergraduate student. She studied Sociology, Psychology, and Women, Gender, & Sexuality Studies.",,y
+name,title,biography,photo,index,id
+Dr. Leontina Hormel,Principal Investigator,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",leontina-hormel,y,001
+Denessy Rodriguez,Former Lab Assistant,"Denessy Rodriguez is a former lab assistant and undergraduate student. She studied Sociology, Psychology, and Women, Gender, & Sexuality Studies.",,y,002
 Cynthia Ballesteros,Former Lab Assistant,"Cynthia Ballesteros is a former lab assistant and undergraduate student. She studied Sociology.",
-Kaela Watson,Former Lab Assistant,,,n
-Kelsey Stevenson,Former Lab Assistant,,,n
-Makayla Sundquist,Former Lab Assistant,,,n
-Ashley Webb,Former Lab Assistant,,,n
-Haylee Brister,Former Lab Assistant,"Haylee Brister is a former lab assistant and undergraduate student. She studied Sociology and Psychology.",,n
-Lincoln Smith,Former Lab Assistant,"Lincoln Smith is a former lab assistant and undergraduate student. He studied Economics, Business Economics, and Business Statistics.",,n
+Kaela Watson,Former Lab Assistant,,,n,003
+Kelsey Stevenson,Former Lab Assistant,,,n,004
+Makayla Sundquist,Former Lab Assistant,,,n,005
+Ashley Webb,Former Lab Assistant,,,n,006
+Haylee Brister,Former Lab Assistant,"Haylee Brister is a former lab assistant and undergraduate student. She studied Sociology and Psychology.",,n,007
+Lincoln Smith,Former Lab Assistant,"Lincoln Smith is a former lab assistant and undergraduate student. He studied Economics, Business Economics, and Business Statistics.",,n,008

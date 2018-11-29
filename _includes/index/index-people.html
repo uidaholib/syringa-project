@@ -1,6 +1,5 @@
 {% assign people = site.data.people %}
 
-<div class="col-md-6">
 
 <div class="card">
     <h5 class="card-header">
@@ -11,18 +10,22 @@
         {% for person in people %}
         {% if person.index == "y" %}
             <li class="list-group-item">
-                <h5 class="card-title">
-                    {{ person.title }}
-                </h5>
-                {% if person.photo %}
-                <img class="card-img w-75 rounded mx-auto d-block pb-3" src="{{ person.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}">
-                {% endif %}
-                <p><b>{{ person.name }}</b></p>
-                <p>{{ person.biography }}</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        {% if person.photo %}
+                        <img class="card-img rounded mx-auto d-block" src="{{ person.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}">
+                        {% endif %}
+                    </div>
+                    <div class="col-md-9">
+                        <h5 class="card-title">
+                            <a href="{{ '/people/' | append: '#' | append: person.id | relative_url }}" class="text-dark">{{ person.name }}</a>, {{ person.title }}
+                        </h5>
+                        <p>{{ person.biography }}</p>
+                    </div>
+                </div>
             </li>
         {% endif %}
         {% endfor %}
         </ul>
     </div>
-</div>
 </div>
