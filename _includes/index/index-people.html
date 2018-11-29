@@ -6,9 +6,10 @@
     <h5 class="card-header">
         People
     </h5>
-    <div class="card-body">
+    <div class="card-body text-center">
         {% for person in people %}
         {% if person.title == "Principal Investigator" %}
+        <img class="card-img w-75 rounded mx-auto d-block pb-3" src="{{ person.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}">
         <h5 class="card-title">
             {{ person.title }}
         </h5>
