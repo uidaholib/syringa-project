@@ -10,7 +10,7 @@ layout: page
             </div>
             <ul class="list-group list-group-flush">
                 {% for p in site.posts %} 
-                <li class="list-group-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                <li class="list-group-item"><a href="{{ p.url | relative_url }}" class="text-muted">{{ p.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -26,7 +26,7 @@ layout: page
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="card-title">
-                        <h2 class="list-group-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+                        <h2 class="list-group-item"><a href="{{ p.url | relative_url }}" class="text-dark">{{ p.title }}</a></h2>
                     </div>
                     <p><b>{{ p.date | date_to_long_string }}</b></p>
                     <p><b>By: {{ p.author }}</b></p>
