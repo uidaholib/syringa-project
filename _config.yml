@@ -23,7 +23,7 @@ collection-date: "2018"
 # url is your gh-pages base, following the pattern: username.github.io
 url: https://uidaholib.github.io
 # baseurl is your github repository's name prefixed with a /
-baseurl: /researchlab-template
+baseurl: /syringa-website
 # repository is the github repository's full url
 repository: https://github.com/uidaholib/researchlab-template
 
