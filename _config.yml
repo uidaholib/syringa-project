@@ -25,7 +25,7 @@ url: https://uidaholib.github.io
 # baseurl is your github repository's name prefixed with a /
 baseurl: /syringa-website
 # repository is the github repository's full url
-repository: https://github.com/uidaholib/researchlab-template
+repository: https://github.com/uidaholib/syringa-website
 
 # Theme Options
 # navbar text color
