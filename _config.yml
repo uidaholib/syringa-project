@@ -23,9 +23,9 @@ collection-date: "2018"
 # url is your gh-pages base, following the pattern: username.github.io
 url: https://uidaholib.github.io
 # baseurl is your github repository's name prefixed with a /
-baseurl: /syringa-website
+baseurl: /syringa-project
 # repository is the github repository's full url
-repository: https://github.com/uidaholib/syringa-website
+repository: https://github.com/uidaholib/syringa-project
 
 # Theme Options
 # navbar text color
