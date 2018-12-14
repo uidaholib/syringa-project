@@ -1,10 +1,10 @@
 <div class="card mb-3">
     {% assign news = site.data.resources %}
     
-    <h5 class="card-header">News</h5>
+    <h5 class="card-header">Recent News</h5>
     <div class="card-body">
         {% for n in news %}
-        {% if n.category == "news" %}
+        {% if n.recent =="y" %}
         <div class="card-title"><a href="{{ n.link }}" class="text-dark" target="_blank">{{ n.title }}</a></div>
         {% if n.photo %}
         <img src="{{ n.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" class="img-thumbnail mb-4">
