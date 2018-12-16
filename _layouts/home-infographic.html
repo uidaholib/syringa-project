@@ -2,17 +2,27 @@
 layout: page
 ---
 
-<div class="row pb-5">
-  <div class="col-md-4 pb-5">
-    {% include index/description.html %}
-    {% include index/index-news.html %}
-    {% include index/index-blog.html %}
+<div class="row justify-content-center pb-4">
+  <div class="col-md-12">
+  {% include index/research.html %}
   </div>
-  <div class="col-md-8">
-    {% include index/carousel.html %}
-    <hr>
-    {% include index/index-people.html %}
-    </div>
 </div>
 
+<hr/>
 
+<div class="row justify-content-center pb-4">
+  <div class="col-md-12">
+    {% include index/index-news.html %}
+  </div>
+</div>
+
+<hr/>
+
+<div class="row justify-content-center pb-4">
+  <div class="col-md-9">
+    {% include index/index-people.html %}
+  </div>
+  <div class="col-md-3 pt-5">
+    {% include index/index-blog.html %}
+  </div>
+</div>
