@@ -22,19 +22,20 @@ layout: page
 
 {% assign news = site.data.resources %}
 
-<h1>News</h1>
+<h1>Syringa in the News</h1>
 
-<div class="row py-4">
+<div class="row pb-4 pt-2">
         {% for n in news %}
         {% if n.category == "news" %}
-    <div class="col-md-6">
+    <div class="col-md-4">
 <div class="card-deck">
-        <div class="card text-center border-dark my-3">
+        <div class="card text-center border-dark my-3 mx-4">
             {% if n.photo %}
             <img class="card-img-top w-75 rounded mx-auto d-block pt-4" src="{{ n.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" alt="Card image cap">
             {% endif %}
             <div class="card-body">
             <h5 class="card-title"><a href="{{ n.link }}" class="text-dark" target="_blank">{{ n.title }}</a></h5>
+            <p class="card-text">{{ n.date }}</p>
             <p class="card-text">{{ n.preview }}</p>
             <a href="{{ n.link }}" class="btn btn-secondary" target="_blank">Read More</a>
             </div>

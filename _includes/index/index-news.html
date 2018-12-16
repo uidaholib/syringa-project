@@ -1,16 +1,61 @@
-<div class="card mb-3">
-    {% assign news = site.data.resources %}
+
+{% assign news = site.data.resources %}
     
-    <h5 class="card-header">Recent News</h5>
-    <div class="card-body">
-        {% for n in news %}
-        {% if n.recent =="y" %}
-        <div class="card-title"><a href="{{ n.link }}" class="text-dark" target="_blank">{{ n.title }}</a></div>
-        {% if n.photo %}
-        <img src="{{ n.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" class="img-thumbnail mb-4">
-        {% endif %}
-        {% endif %}
-        {% endfor %}
+<h3 class="pb-2">Recent News</h3>
+    
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <div class="card mx-3 mb-1">
+            {% for n in news %}
+            {% if n.recent =="1" %}
+            {% if n.photo %}
+            <img class="card-img-top" src="{{ n.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" alt="Card image cap">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title text-center"><a href="{{ n.link }}" class="text-dark" target="_blank">{{ n.title }}</a></h5>
+                <p class="card-text">{{ n.preview }}</p>
+                <div class="text-center">
+                    <a href="{{ n.link }}" class="btn btn-secondary" target="_blank">Read More</a>
+                </div> 
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mx-3 mb-1">
+            {% for n in news %}
+            {% if n.recent =="2" %}
+            {% if n.photo %}
+            <img class="card-img-top" src="{{ n.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" alt="Card image cap">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title text-center"><a href="{{ n.link }}" class="text-dark" target="_blank">{{ n.title }}</a></h5>
+                <p class="card-text">{{ n.preview }}</p>
+                <div class="text-center">
+                    <a href="{{ n.link }}" class="btn btn-secondary" target="_blank">Read More</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mx-3">
+            {% for n in news %}
+            {% if n.recent =="3" %}
+            {% if n.photo %}
+            <img class="card-img-top" src="{{ n.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}" alt="Card image cap">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title text-center"><a href="{{ n.link }}" class="text-dark" target="_blank">{{ n.title }}</a></h5>
+                <p class="card-text">{{ n.preview }}</p>
+                <div class="text-center">
+                    <a href="{{ n.link }}" class="btn btn-secondary" target="_blank">Read More</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </div>
-    

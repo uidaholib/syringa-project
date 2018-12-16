@@ -1,17 +1,15 @@
 {% assign people = site.data.people %}
 
-
-<div class="card">
-    <h5 class="card-header">
-        People
-    </h5>
-    <div class="card-body text-center">
+<h3 class="pb-2">People</h3>
+    
+<div class="card mx-3">
+    <div class="card-body">
         <ul class="list-group list-group-flush">
         {% for person in people %}
         {% if person.index == "y" %}
             <li class="list-group-item">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 align-self-center text-center">
                         {% if person.photo %}
                         <img class="card-img rounded mx-auto d-block" src="{{ person.photo | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}">
                         {% endif %}

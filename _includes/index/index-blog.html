@@ -1,11 +1,11 @@
 
-    <div class="card mb-3">
+    <div class="card mb-3 mx-3">
         <h5 class="card-header">
-            New Posts
+            New Blog Posts
         </h5>
         <ul class="list-group list-group-flush">
             {% for p in site.posts %} 
-            <li class="list-group-item"><a href="{{ p.url | relative_url }}" class="text-dark">{{ p.title }}</a></li>
+            <li class="list-group-item"><a href="{{ p.url | relative_url }}" class="text-dark">> {{ p.title }}</a></li>
             {% endfor %}
         </ul>
     </div>
