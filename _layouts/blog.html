@@ -2,41 +2,43 @@
 layout: page
 ---
 
+{% assign blog = site.data.blog %}
+
+<h2 class="pt-2">Blog</h2>
+
 <div class="row">
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-header">
-                <h4>New Posts</h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                {% for p in site.posts %} 
-                <li class="list-group-item"><a href="{{ p.url | relative_url }}" class="text-muted">{{ p.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="card mt-3">
-            <div class="card-body">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-success mt-2" type="submit">Search</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-9 pb-5">
-        {% for p in site.posts %} 
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h2 class="list-group-item"><a href="{{ p.url | relative_url }}" class="text-dark">{{ p.title }}</a></h2>
+    <div class="col-md-12">
+        {% for b in blog %}
+        {% if b.image %} 
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item py-4">
+                <div class="row">
+                    <div class="col-md-5 align-self-center text-center">
+                        <img class="img-fluid" src="{{ b.image | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}">
                     </div>
-                    <p><b>{{ p.date | date_to_long_string }}</b></p>
-                    <p><b>By: {{ p.author }}</b></p>
-                    <p>{{ p.excerpt }}</p>
-                    {% for tag in p.tags %}
-                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ tag | trim |escape }}" href="{{ tag | trim | url_param_escape | prepend: '/blog/#' | relative_url }}">{{ tag }}</a> 
-                    {% endfor %} 
-                    
+                    <div class="col-md-7 align-self-center pl-5">
+                        <h5>{{ b.title }}</h5>
+                        <p><i>By: {{ b.author }} on {{ b.date | date_to_long_string }}</i></p>
+                        <p>{{ b.content | truncate: 700 }}</p>
+                        <p><a href="#">Read more ></a></p>
+                    </div>
                 </div>
-            </div>
+            </li>
+        </ul>
+        {% else %}
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item py-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 align-self-center pl-5">
+                        <h5>{{ b.title }}</h5>
+                        <p><i>By: {{ b.author }} on {{ b.date | date_to_long_string }}</i></p>
+                        <p>{{ b.content | truncate: 700 }}</p>
+                        <p><a href="#">Read more ></a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
