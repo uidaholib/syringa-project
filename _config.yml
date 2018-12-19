@@ -49,3 +49,11 @@ permalink: pretty
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
 # (this is done automatically by gh-pages build)
+
+# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
+page_gen:
+  - data: 'blog'
+    template: 'items'
+    name: 'id'
+    dir: 'items'
+    extension: 'html'
