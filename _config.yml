@@ -53,7 +53,7 @@ permalink: pretty
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
   - data: 'blog'
-    template: 'items'
+    template: 'blogpost'
     name: 'id'
-    dir: 'items'
+    dir: 'blogpost'
     extension: 'html'

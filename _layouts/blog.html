@@ -19,7 +19,7 @@ layout: page
                         <h5>{{ b.title }}</h5>
                         <p><i>By: {{ b.author }} on {{ b.date | date_to_long_string }}</i></p>
                         <p>{{ b.content | truncate: 700 }}</p>
-                        <p><a href="{{ '/items/' | append: b.id | append: '.html' | relative_url }}">Read more ></a></p>
+                        <p><a href="{{ '/blogpost/' | append: b.id | append: '.html' | relative_url }}">Read more ></a></p>
                     </div>
                 </div>
             </li>
