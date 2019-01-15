@@ -55,5 +55,5 @@ page_gen:
   - data: 'blog'
     template: 'blogpost'
     name: 'id'
-    dir: 'blogpost'
+    dir: 'blog'
     extension: 'html'
