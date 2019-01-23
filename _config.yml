@@ -50,10 +50,4 @@ permalink: pretty
 # JEKYLL_ENV=production jekyll build
 # (this is done automatically by gh-pages build)
 
-# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
-page_gen:
-  - data: 'blog'
-    template: 'blogpost'
-    name: 'id'
-    dir: 'blog'
-    extension: 'html'
+
