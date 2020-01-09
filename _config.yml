@@ -40,7 +40,7 @@ bootswatch: # leave blank or comment out for plain bootstrap
 
 # google services [optional!]
 # leave these blank or comment out to NOT include google code
-google-tracking-id: "UA-74844011-1"
+# google-tracking-id: 
 # google-cse-id: "002151703305773322890:1pu3smhw1t8"
 
 # build settings
