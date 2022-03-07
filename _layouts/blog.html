@@ -2,43 +2,21 @@
 layout: page
 ---
 
-{% assign blog = site.data.blog | sort:"id" | reverse %}
-<h2 class="pt-2">Blog</h2>
 
-<div class="row">
-    <div class="col-md-12">
-        {% for b in blog %}
-        {% if b.image %} 
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item py-4">
-                <div class="row">
-                    <div class="col-md-5 align-self-center text-center">
-                        <img class="img-fluid" src="{{ b.image | append: '_sm.jpg' | prepend: 'objects/thumbs/' | relative_url }}">
-                    </div>
-                    <div class="col-md-7 align-self-center pl-5">
-                        <section id="{{ b.id }}"><h5>{{ b.title }}</h5></section>
-                        <p><i>By: {{ b.author }} on {{ b.date | date_to_long_string }}</i></p>
-                        <p>{{ b.content }}</p>
-                        <!--<p><a href="{{ '/blog/' | append: b.id | append: '.html' | relative_url }}">Read more ></a></p>-->
-                    </div>
-                </div>
-            </li>
-        </ul>
-        {% else %}
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item py-4">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 align-self-center pl-5">
-                        <h5>{{ b.title }}</h5>
-                        <p><i>By: {{ b.author }} on {{ b.date | date_to_long_string }}</i></p>
-                        <p>{{ b.content }}</p>
-                        <!--<p><a href="#">Read more ></a></p>-->
-                    </div>
-                </div>
-            </li>
-        </ul>
-        {% endif %}
-        {% endfor %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h2 class="py-4">Blog</h2>
+        <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url | append: 'index.html' | relative_url }}">{{ post.title }}</a>
+                <br>
+                <strong>{{ post.date | date_to_long_string }}</strong>
+                <br>
+                {{ post.excerpt }}
+              </li>
+            {% endfor %}
+          </ul>
     </div>
 </div>
 
