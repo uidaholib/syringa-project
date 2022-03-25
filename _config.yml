@@ -44,7 +44,13 @@ bootswatch: # leave blank or comment out for plain bootstrap
 # google-cse-id: "002151703305773322890:1pu3smhw1t8"
 
 # build settings
+# Defaults to simplify front matter
 permalink: pretty
+defaults:
+  - 
+    values:
+      layout: "post"
+      excerpt_separator: "<!--more-->"
 
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
