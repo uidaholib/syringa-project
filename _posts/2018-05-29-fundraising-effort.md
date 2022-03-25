@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Fundraising Effort"
 author: Leontina Hormel
-image: doublewidemovemay2018
-tag: syringa
-excerpt_separator: <!--more-->
+image: doublewidemovemay2018.jpg
+subjects: syringa; test
 ---
 
 Over the month of May and early June 2018, I worked with Steve Bonnar (Director of Sojourners' Alliance), Lysa Salsbury (Director of UI Women's Center), 

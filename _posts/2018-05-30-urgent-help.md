@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Urgent Help!"
 author: Leontina Hormel
-image: urgenthomemovemay302018
-tag: syringa
-excerpt_separator: <!--more-->
+image: urgenthomemovemay302018.jpg
+tags: syringa
 ---
 
 I am working with residents moving out of Syringa Mobile Home Park, who need to be out of the park by the end of June 5th before the park closes. 

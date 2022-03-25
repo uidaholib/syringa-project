@@ -4,7 +4,7 @@ layout: default
 
 <style>
     #post-banner {
-        background-image: url('{{ page.image | prepend: "objects/" | append: ".jpg" | relative_url }}');
+        background-image: url('{{ page.image | prepend: "objects/" | relative_url }}');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -27,8 +27,9 @@ layout: default
         <h5>{{ page.date | date_to_long_string }}</h5>
         <br/>
         <h4>By: {{ page.author }}</h4>
-        {% for tag in page.tags %}
-        <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ tag | trim |escape }}" href="{{ tag | trim | url_param_escape | prepend: '/blog/#' | relative_url }}">{{ tag }}</a>
+        {%- assign tags = page.subjects | split: ';' -%}
+        {% for t in tags %}
+        <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ t | strip | trim |escape }}" href="{{ t | strip | trim | url_param_escape | prepend: '/blog/#' | relative_url }}">{{ t }}</a>
         {% endfor %}
         <div class="pb-5">
         <p>{{ content }}</p>
