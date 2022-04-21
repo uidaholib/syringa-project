@@ -1,8 +1,8 @@
-# Research Lab Template
+# Mobile Home Park Experiences and Community Alternatives
 
 https://github.com/uidaholib/researchlab-template
 
-> **work in progress!**
+> **under construction**
 
 A project to generate a free and simple research site using [GitHub Pages](https://pages.github.com/)
 
