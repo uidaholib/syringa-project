@@ -1,4 +1,4 @@
-# researchlab-template
+# Research Lab Template
 
 https://github.com/uidaholib/researchlab-template
 
