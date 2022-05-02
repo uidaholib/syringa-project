@@ -5,20 +5,20 @@
 # Site settings
 
 # title of site appears in banner
-title: The Syringa Project
+title: The Working-class Communities Project
 # tagline appears in banner
-tagline: Syringa Mobile Home Park and Affordable Housing on the Palouse
+tagline: Seeking Housing Affordability and Community on the Palouse and Beyond
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "The Syringa Project details research surrounding Syringa Mobile Home Park and affordable housing."
+description: "The Working-class Communities Project presents research surrounding Syringa Mobile Home Park and affordable housing issues in Moscow, the state of Idaho, across the country, and globally. It is meant to offer resources for studying threats to working-class communities and the different forms of housing that are imagined for addressing housing scarcity for families."
 # keywords appear in meta tags
 keywords: "university of idaho, research, labs"
 # creator of the digital collection, to appear in meta tags
-author: owikle
+author: lhormel
 # creator contact email for meta tags
-email: omwikle@uidaho.edu
+email: lhormel@uidaho.edu
 # collection project date, when did you publish this
-collection-date: "2019"
+collection-date: "2022"
 
 # url is your gh-pages base, following the pattern: username.github.io
 url: https://uidaholib.github.io
